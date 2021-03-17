@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title align='center'>Aula 4 - Formulários</title>
+    </head>
+
+    <body bgcolor='red'>
+        <h2>Formulários em HTML</h2>
+        <form action="salvar.php" method="GET" align='center'>
+            <label for="txtnome">
+                <b>Nome:</b> 
+            </label> <br>
+            <input type="text" name="txtname" placeholder="Digite seu nome" size='30' id='nome'> <br>
+
+            <label for="txtlastname">
+                <b> Sobrenome: </b>    
+            </label> <br>
+            <input type="text" name="txtlastname" placeholder="Digite seu sobrenome" size='30' id='sobrenome'>
+            <br>
+            <label for="txtbirthday"><b>Data de nascimento:</b></label><br>
+            <input type="date" name="txtbirthday" id="birthday"><br>
+
+            <label for="txtbeatiful">Sou lindo?</label>
+            <input type="checkbox" name="beatiful" id="beatiful">
+            <input type="submit" value='Cadastrar'>
+            <input type="reset" value='limpar'>
+
+        </form>
+
+        <form action="salvar.php" method='GET'>
+            <label for="carros">Carros:</label>
+            <select name="carros" id="carros">
+                <option value="0">Selecione...</option>
+                <option value="Fusca">Fusca</option>
+                <option value="Gol">Gol</option>
+                <option value="Opala">Opala</option>
+
+
+            </select>
+        </form>
+    </body>
+
+    
+
+</html>
