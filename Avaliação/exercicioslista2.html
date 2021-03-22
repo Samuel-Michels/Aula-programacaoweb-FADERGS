@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="name" content="Samuel Michels">
+    <meta name="email" content="samuel@git.com">
+    <meta name="Descrição" content="Site de teste para avaçiação">
+    <title>Lista exercício 2</title>
+</head>
+
+<body>
+    <!--Sumário-->
+    <h1>Sumário</h1>
+    <ul>
+        <li>Tabela <a href="#tabela">Ir para</a></li>
+        <li>Formulário <a href="#formulario">Ir para</a></li>
+        <li>Lista de Exercício 1 <a href="./exercicioslista1.html">Ir para</a> </li>
+        <li>Moodle da disciplina <a href="https://fadergs.blackboard.com/" target='_blank'>Ir para</a> </li>
+    </ul>
+    
+    
+
+    <!--Tabela-->
+    <h1>Tabela</h1>
+    <a name="tabela"></a>
+    <table border=1>   
+        <thead>
+            <tr>
+                <th colspan=2>Descrição</th>
+                <th colspan=3>Informações de pedido</th>
+            </tr>
+            <tr>
+                <th>Imagem</th>
+                <th>Nome produto</th>
+                <th>Quantidade</th>
+                <th>Valor unitário</th>
+                <th>Valor total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="http://philco.vteximg.com.br/arquivos/ids/175780/ifm9_02.jpg?v=637097856065670000" alt="Broken" height=200 width=200></td>
+                <td>Ar condicionado</td>
+                <td align='center'>1</td>
+                <td align='center'>5.000,00</td>
+                <td align='center'>5.000,00</td>
+            </tr>
+            <tr>
+                <td><img src="https://cdn.leroymerlin.com.br/products/chuveiro_eletronico_220v_7800w_branco_cromado_acqua_duo__90648306_de80_300x300.jpeg" alt="Broken" height=200 width=200></td>
+                <td>Chuveiro</td>
+                <td align='center'>2</td>
+                <td align='center'>300,00</td>
+                <td align='center'>600,00</td>
+            </tr>
+            <tr>
+                <td><img src="https://www.extra-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=168331456" alt="Broken" height=200 width=200></td>
+                <td>Geladeira</td>
+                <td align='center'>1</td>
+                <td align='center'>800,00</td>
+                <td align='center'>800,00</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <!--Formulário-->
+    <h1>Formulário</h1>
+    <a name="formulario"></a>
+    <form action="inscricao.php">
+        <table>
+            <tr>
+                <td><label for="">Primeiro nome:</label></td>
+                <td><input type="text" name="txtname" placeholder="Primeiro nome"></td>
+            </tr>
+            <tr>
+                <td><label for="">Último nome:</label></td>
+                <td><input type="text" name="txtlastname" placeholder="Último nome"></td>
+            </tr>
+            <tr>
+                <td><label for="">Email:</label></td>
+                <td><input type="text" name="txtmail" placeholder="Email"></td>
+            </tr>
+            <tr>
+                <td><label for="">Cargo:</label></td>
+                <td>
+                    <select name="cargo" id="cargo">
+                        <option value="0">Selecione...</option>
+                        <option value="Diretos">Diretor</option>
+                        <option value="Gerente">Gerente</option>
+                        <option value="Funcionario">Funcionário</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Resumo profissional: </label></td>
+                <td><textarea name="txtinfo" cols="30" rows="7"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Limpar"> <input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
