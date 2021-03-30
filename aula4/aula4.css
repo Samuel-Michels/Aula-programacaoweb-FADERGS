@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+p{
+    text-align:justify ;
+    font-family: monospace;
+    font-size: 30px;
+    color: chartreuse;
+    font-style: italic;
+    font-weight: bold;
+    text-indent: 3px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
