@@ -1,0 +1,35 @@
+.classbg{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000;
+}
+.classblue{
+    color: blue;
+}
+.classred{
+    color: red;
+}
+.classfont{
+    text-indent:1em;
+    font-size: 16px;
+}
+
+#idtop{
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: red;
+    font-size: 20px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+}
+
+#idimagem{
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
