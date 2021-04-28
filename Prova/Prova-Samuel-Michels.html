@@ -1,0 +1,74 @@
+<!-- A resposta para primeira questão: A fonte aplicada vai ser 52px e o paddin 10px
+visto que mesmo o div recebendo argumentos de formatação a class="principal" define o parágrafo
+com respectivas normas, é uma questão bem dizer: "Quem está mais proximo manda"-->
+
+<html>
+    <head>
+        <link rel="stylesheet"
+         type="text/css"
+         href="./prova.css">  
+         
+         <script type="text/javascript">
+            function votar(){
+                var data = new Date();
+                var dia     = data.getDate();
+                var mes     = data.getMonth();
+                var ano    = data.getFullYear();
+                var hora    = data.getHours();          
+                var min     = data.getMinutes();        
+                var seg     = data.getSeconds();
+
+
+
+                var str_data = dia + '/' + (mes+1) + '/' + ano;
+                var str_hora = hora + ':' + min + ':' + seg;
+
+                window.alert('Voto computado com sucesso! Em ' + str_data + ' às ' + str_hora);
+            }
+            function bs(){        
+                var candidato = 'Bolsonaro Careca'
+
+                window.alert('Você Escolheu o candidato: ' + candidato);
+            }
+            function sdz(){
+
+                var candidato = 'Suco de Zap'
+
+                window.alert('Você Escolheu o candidato: ' + candidato);
+            }
+            function ha(){
+
+                var candidato = 'Hulk agiota'
+
+                window.alert('Você Escolheu o candidato: ' + candidato);
+            }
+           
+        </script>
+    </head>
+    <body>
+       <p id="top">Vote no seu candidato!</p>
+       <div class="central">
+           <table>
+                <tr>
+                    <th><img src="https://pbs.twimg.com/media/ExCE7o0WYAkgwZe.png" alt=""></th>
+                    <th>Suco de ZAP</th> 
+                    <div >
+                    <th><img src="https://pbs.twimg.com/media/EDzlu5TXoAAPuXe.jpg" alt=""></th>
+                    <th>Hulk Agiota</th>
+                    </div>
+                    <th><img src="https://i.redd.it/by85rtperea61.png" alt=""></th>
+                    <th>Bolsonaro Careca</th>  
+                </tr>
+           </table>
+        </div>
+
+        <div class="radio">
+            <p class="borda">
+                <input type="radio" name="presidente" value="sdz" onclick="sdz()"/>Suco de Zap
+                <input type="radio" name="presidente" value="ha" onclick="ha()"/> Hulk Agiota
+                <input type="radio" name="presidente" value="bc" onclick="bs()"/>Bolsonaro Careca
+            </p>
+        </div>
+        <button class="botao" onclick="votar()">Votar</button>
+    </body>
+</html>
